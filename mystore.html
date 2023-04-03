@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Daniel's Shoe Store</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="styles.css" />
+        <script src="store.js" async></script>
+        <style>
+          .footer {
+             position: fixed;
+             left: 0;
+             bottom: 0;
+             width: 100%;
+             background-color: #282828;
+             color: white;
+             text-align: center;
+             font-size: 11px;
+          
+          }
+          
+          body {
+              background-image: url('background.jpeg');
+              margin-bottom: 50px;
+          }
+          
+          
+          body {
+            font-family: 'Times New Roman';
+            background-color: #1d1e22;
+            color: white;
+            background-size:cover;
+          }
+          
+          img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          }
+          
+          .navbar {
+            overflow: hidden;
+            background-color: #282828;
+          }
+          
+          .navbar a {
+            float: left;
+            font-size: 20px;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+          }
+          
+          .navbar a:hover, .dropdown:hover .dropbtn {
+            background-color: #787878;
+          }
+          
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #1d1e22;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+          }
+          
+          .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+          }
+          
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+          
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+          
+          .topnav input[type=text] {
+            float: right;
+            padding: 6px;
+            border: none;
+            margin-top: 8px;
+            margin-right: 16px;
+            font-size: 17px;
+          }
+          
+          h1{text-align: center;}
+          p{text-align: center;}
+          p {
+              font-size: 30px;
+          }
+          
+          
+          </style>
+    </head>
+    <body>
+        <header class="main-header">
+            <nav class="main-nav nav">
+              <div class="navbar">
+                <a class="active" href="index.html">Home Page</a>
+                <a href="aboutme.html">About Me</a>
+                <a href="contactme.html">Contact Me</a>
+                <a href="mywork.html">My Work</a>
+                <a href="mystore.html">My Store</a>
+            </nav>
+            <h1 class="store-name">Daniel's Shoe Store</h1>
+        </header>
+        <section class="container content-section">
+            <h2 class="section-header"></h2>
+            <div class="shop-items">
+                <div class="shop-item">
+                    <img class="shop-item-image" src="samba.jpeg"
+                    width="300"
+                    height="300" />
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">Adidas Samba</span>
+                    <span class="shop-item-price">$74.99</span>
+                    <br></br>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <br></br>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="574.jpeg"
+                    width="300"
+                    height="300" />
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">New Balance 574</span>
+                      <span class="shop-item-price">$74.99</span>
+                      <br></br>
+                      <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <br></br>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="cortez.jpeg"
+                    width="300"
+                    height="300"/>
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">Nike Cortez</span>
+                        <span class="shop-item-price">$89.99</span>
+                        <br></br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <br></br>
+                <div class="shop-item">
+                    <img class="shop-item-image" src="clubc.jpeg"
+                    width="300"
+                    height="300">
+                    <div class="shop-item-details">
+                      <span class="shop-item-title">Reebok Club C</span>
+                        <span class="shop-item-price">$74.99</span>
+                        <br></br>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+      
+        <section class="container content-section">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+                <h3 class="store-name"></h3>
+                <ul class="nav footer-nav">
+                </ul>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Lineups</title>
+		<style>
+			#lineupHeading {
+				text-align: center;
+			}
+			#lineupInformation {
+				display: flex;
+				justify-content: space-evenly;
+				align-items: center;
+				flex-direction: row;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="lineupHeading"></h1>
+		<div id="lineupInformation">
+			<section id="homeTeam-section">
+				<h2 id="homeTeam-banner"></h2>
+				<h3 id="homeTeam-coach"></h3>
+				<div id="homeTeam-starters">
+					<h4>Starters</h4>
+				</div>
+				<div id="homeTeam-substitutes">
+					<h4>Substitutes</h4>
+				</div>
+			</section>
+			<section id="awayTeam-section">
+				<h2 id="awayTeam-banner"></h2>
+				<h3 id="awayTeam-coach"></h3>
+				<div id="awayTeam-starters">
+					<h4>Starters</h4>
+				</div>
+				<div id="awayTeam-substitutes">
+					<h4>Substitutes</h4>
+				</div>
+			</section>
+		</div>
+		<script src="/scripts/lineupObj.js"></script>
+		<script src="/scripts/lineup.js"></script>
+	</body>
+</html>
